@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>城市纯玩企划 · Play the City</title><meta name="description" content="抽一根路牌，换一种玩法。旋转、探索，保存属于你的城市纯玩路牌。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath stroke='%23222' stroke-width='3' d='M16 3v27'/%3E%3Cpath fill='%23ffff00' stroke='%23222' stroke-width='2' d='M3 6h20l6 5-6 5H3z'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css"><script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+<header><a class="brand" href="./" aria-label="城市纯玩企划首页"><img src="assets/title.svg" alt="城市纯玩企划 · Play the City"></a></header>
+<main><div class="scene" id="scene" role="region" aria-label="立体路牌，拖动或使用方向键旋转" tabindex="0"></div><div class="loading" id="loading" role="status">正在组装你的路牌…</div></main>
+<footer><div class="collection"><span class="tiny-label">本次纯玩</span><div id="names" aria-live="polite"></div></div><div class="actions"><button class="shuffle" id="shuffle" aria-label="再抽一次" disabled></button><button class="save" id="save" aria-label="保存图片" disabled></button></div></footer>
+<div class="toast" id="toast" role="status"></div><dialog id="save-dialog"><button class="close" id="close-dialog" aria-label="关闭保存预览">×</button><p>长按图片保存</p><img id="saved-image" alt="你的城市纯玩路牌海报"><a id="download-link" download="Play-the-City.png" aria-label="下载图片"></a></dialog>
+<script type="module" src="app.js"></script>
+</body></html>
